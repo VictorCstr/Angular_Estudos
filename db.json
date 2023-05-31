@@ -1,0 +1,8 @@
+{
+  "animals": [
+      { "name": "Boruto", "type": "Gato", "age": 3 },
+    { "name": "Robinha", "type": "Gato", "age": 1 },
+    { "name": "Floquinho", "type": "Cachorro", "age": 5 },
+    { "name": "Flick", "type": "Cachorro", "age": 8 }
+  ]
+}

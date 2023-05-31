@@ -1,0 +1,15 @@
+<h2>Lista de animais</h2>
+<h3>Renderizado com lista e requisição http em um service</h3>
+<ul>
+  <button (click)="listAnimals()" [ngStyle]="{ 'margin-bottom': '12px' }">
+    Mostrar Animais
+  </button>
+  <li *ngFor="let animal of animals">
+    Nome: {{ animal.name }}, Tipo: {{ animal.type }}
+    <button (click)="showAge(animal)">Mostrar idade</button>
+    <button (click)="deleteAnimal(animal)">Deletar animal</button>
+  </li>
+</ul>
+<h3>{{ animalDetails }}</h3>
+
+<div class="class"></div>
