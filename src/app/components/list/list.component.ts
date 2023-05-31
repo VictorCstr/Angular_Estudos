@@ -9,7 +9,7 @@ import { ListService } from 'src/app/services/list.service';
 })
 export class ListComponent {
   constructor(private listService: ListService) {
-    // this.listAnimals();
+    this.listAnimals();
   }
   animals: Animal[] = [];
   animalDetails = '';
@@ -25,6 +25,7 @@ export class ListComponent {
   }
 
   deleteAnimal(animal: Animal) {
-    this.animals = this.listService.remove(this.animals, animal);
+    this.animals = this.animals.filter((a) => animal.name !== a.name);
+    this.listService.remove(animal.id).subscribe();
   }
 }
